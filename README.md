@@ -12,3 +12,8 @@ In a nutshell, instead of **optimizing the model to reduce the loss**, we're **u
 * This works primarily because of the piecewise linear nature of deep neural networks. For example, look at ReLU or at maxout functions, they're all piecewise linear. Even a carefully tuned sigmoid has an approximate linear nature when taken piecewise.
 
 * With varying values of epsilon, we will see an approximately linear relationship between "confidence" and epsilon.
+
+## Negative epsilon FGSM
+* this can be used to turn one animal into another specific animal for the deep neural network
+<div style="center">
+<img src = "images/negative_eps_FGSM.png" width = "50%">
