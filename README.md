@@ -1,11 +1,14 @@
 # deep-chicken-saviour :shield: :chicken:
 
+## Before:
+<img src = "images/no_FGSM.gif" width = "80%">
+
+## After:
+<img src = "images/FGSM.gif" width = "80%">
+
 <img src = "images/adversarial_attack.png" width = "100%">
 
-## Tracking without FGSM:
-<img src = "images/no_FGSM.gif" width = "100%">
 
-## Tracking after the FGSM attack:
 
 
 ## Fast Gradient Sign Method :chart_with_upwards_trend:
