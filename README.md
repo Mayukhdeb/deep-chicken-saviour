@@ -2,6 +2,12 @@
 
 <img src = "images/adversarial_attack.png" width = "100%">
 
+## Tracking without FGSM:
+<img src = "images/no_FGSM.gif" width = "100%">
+
+## Tracking after the FGSM attack:
+
+
 ## Fast Gradient Sign Method :chart_with_upwards_trend:
 
 * `sign(data_gradients)` gives the element wise signs of the data gradient
