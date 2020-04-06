@@ -1,12 +1,12 @@
 # deep-chicken-saviour :shield: :chicken:
 
+## Before:
+<img src = "images/no_FGSM.gif" width = "80%">
+
+## After:
+<img src = "images/FGSM.gif" width = "80%">
+
 <img src = "images/adversarial_attack.png" width = "100%">
-
-## Tracking without FGSM:
-<img src = "images/no_FGSM.gif" width = "100%">
-
-## Tracking after the FGSM attack:
-
 
 ## Fast Gradient Sign Method :chart_with_upwards_trend:
 
@@ -24,7 +24,6 @@ In a nutshell, instead of **optimizing the model to reduce the loss**, we're **u
 <div style="center">
 <img src = "images/negative_eps_FGSM.png" width = "50%">
 
-
 ## How are the images "optimized" using the same FGSM ?
 * The key here is to understand how FGSM actually worked.
 In FGSM, we were tampering with the pixels which has a *positive* gradient and added a certain value `gradient * epsilon` to each of those pixels. This made the image deviate further and further away from the class it actually belongs to and thus maximising loss in the process. Note that this was done with a __positive epsilon__ value
@@ -34,7 +33,6 @@ But for our current objective, we will try to "optimize" the image to a differen
 * Performing a backpropagation on the network and extracting the gradients on the input image.
 * Now instead of trying to maximise loss using the FGSM, we'll reduce the loss with a __negative epsilon__ FGSM.
 * This will help reduce the loss of the image with respect to the target class `y`, and with a sufficiently  negative epsilon value, the image gets mis-classified as the target class.
-
 
 If you didn't read the boring stuff above, just remember that 
 * A __positive epsilon__ value will __un-optimize__ the image 
