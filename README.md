@@ -37,3 +37,6 @@ But for our current objective, we will try to "optimize" the image to a differen
 If you didn't read the boring stuff above, just remember that 
 * A __positive epsilon__ value will __un-optimize__ the image 
 * A __negative epsilon__ value will __optimize__ the image for the given label class
+
+<img src = "images/epsilon_vs_class_prob.png" width = "100%">
+
