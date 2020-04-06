@@ -22,7 +22,7 @@ In a nutshell, instead of **optimizing the model to reduce the loss**, we're **u
 ## Negative epsilon FGSM
 * this can be used to turn one animal into another specific animal for the deep neural network
 <div style="center">
-<img src = "images/negative_eps_FGSM.png" width = "50%">
+<img src = "images/negative_eps_FGSM.png" width = "40%">
 
 ## How are the images "optimized" using the same FGSM ?
 * The key here is to understand how FGSM actually worked.
@@ -40,8 +40,8 @@ If you didn't read the boring stuff above, just remember that
 
 ## Generating adversarial patches from black images 
 
-<img src = "images/epsilon_vs_class_prob.png" width = "100%">
+<img src = "images/epsilon_vs_class_prob.png" width = "80%">
 
-<img src = "images/adversarial_patches.png" width = "100%">
+<img src = "images/adversarial_patches.png" width = "50%">
 
 
